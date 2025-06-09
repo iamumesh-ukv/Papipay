@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="new_package_facebooklogin.FB_LoginTest">
+      <class name="package02.ReadingTestDataFromExcelSheet">
         <methods>
           <include name="loginTest"/>
         </methods>
-      </class> <!-- new_package_facebooklogin.FB_LoginTest -->
+      </class> <!-- package02.ReadingTestDataFromExcelSheet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
