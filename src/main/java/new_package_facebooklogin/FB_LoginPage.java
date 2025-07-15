@@ -9,37 +9,36 @@ public class FB_LoginPage {
 
 	WebDriver driver;
 
-	//Objects
+	// Objects
 	@FindBy(xpath = "//input[@id='email']")
 	WebElement emailAddressField;
 
-	@FindBy(xpath="//input[@id='pass']")
+	@FindBy(xpath = "//input[@id='pass']")
 	WebElement passwordField;
 
-	@FindBy(xpath="//button[@id='loginbutton']")
+	@FindBy(xpath = "//button[@id='loginbutton']")
 	WebElement loginButton;
 
+	// Actions Method
 
-	//Actions Method
-
-	public FB_LoginPage(WebDriver driver)
-	{
+	public FB_LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+
 	public void enterEmailAddress(String emailText) {
 
 		emailAddressField.sendKeys(emailText);
 
 	}
+
 	public void enterPassword(String passwordText) {
 
 		passwordField.sendKeys(passwordText);
 
 	}
-	
-	public void clickOnLoginbutton()
-	{
+
+	public void clickOnLoginbutton() {
 		loginButton.click();
 	}
 }
